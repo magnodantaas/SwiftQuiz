@@ -13,6 +13,10 @@
 		E434B598262695CD006CCB64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E434B596262695CD006CCB64 /* Main.storyboard */; };
 		E434B59A262695D0006CCB64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E434B599262695D0006CCB64 /* Assets.xcassets */; };
 		E434B59D262695D0006CCB64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E434B59B262695D0006CCB64 /* LaunchScreen.storyboard */; };
+		E434B5A726269E6F006CCB64 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E434B5A626269E6F006CCB64 /* QuizViewController.swift */; };
+		E434B5AA26269E8E006CCB64 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E434B5A926269E8E006CCB64 /* ResultViewController.swift */; };
+		E434B5AD2626A18D006CCB64 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = E434B5AC2626A18D006CCB64 /* Quiz.swift */; };
+		E434B5B12626A1F9006CCB64 /* QuizManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E434B5B02626A1F9006CCB64 /* QuizManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		E434B599262695D0006CCB64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E434B59C262695D0006CCB64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E434B59E262695D0006CCB64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E434B5A626269E6F006CCB64 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		E434B5A926269E8E006CCB64 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		E434B5AC2626A18D006CCB64 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
+		E434B5B02626A1F9006CCB64 /* QuizManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +64,13 @@
 		E434B58F262695CD006CCB64 /* SwiftQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				E434B5AC2626A18D006CCB64 /* Quiz.swift */,
+				E434B5B02626A1F9006CCB64 /* QuizManager.swift */,
 				E434B590262695CD006CCB64 /* AppDelegate.swift */,
 				E434B592262695CD006CCB64 /* SceneDelegate.swift */,
 				E434B594262695CD006CCB64 /* ViewController.swift */,
+				E434B5A626269E6F006CCB64 /* QuizViewController.swift */,
+				E434B5A926269E8E006CCB64 /* ResultViewController.swift */,
 				E434B596262695CD006CCB64 /* Main.storyboard */,
 				E434B599262695D0006CCB64 /* Assets.xcassets */,
 				E434B59B262695D0006CCB64 /* LaunchScreen.storyboard */,
@@ -137,9 +149,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E434B5AA26269E8E006CCB64 /* ResultViewController.swift in Sources */,
 				E434B595262695CD006CCB64 /* ViewController.swift in Sources */,
+				E434B5AD2626A18D006CCB64 /* Quiz.swift in Sources */,
+				E434B5B12626A1F9006CCB64 /* QuizManager.swift in Sources */,
 				E434B591262695CD006CCB64 /* AppDelegate.swift in Sources */,
 				E434B593262695CD006CCB64 /* SceneDelegate.swift in Sources */,
+				E434B5A726269E6F006CCB64 /* QuizViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +312,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.magnodantas.SwiftQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +331,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.magnodantas.SwiftQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
